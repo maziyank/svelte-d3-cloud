@@ -1,35 +1,51 @@
-*Psst — looking for an app template? Go here --> [sveltejs/template](https://github.com/sveltejs/template)*
+# svelte-d3-cloud
 
----
+Svelte wrapper for [d3-cloud](https://github.com/jasondavies/d3-cloud)
 
-# component-template
+## Installation
 
-A base for building shareable Svelte components. Clone it with [degit](https://github.com/Rich-Harris/degit):
+* Run `npm install svelte-d3-cloud` (or `yarn add svelte-d3-cloud`)
 
-```bash
-npx degit sveltejs/component-template my-new-component
-cd my-new-component
-npm install # or yarn
+## Usage
+
+```html
+
+<script>
+import WordCloud from "svelte-d3-cloud";
+
+const words = [
+    { text: "Halo", count: 100 },
+    { text: "Dunia", count: 50 },
+    { text: "Gaib", count: 75 },
+  ];
+
+</script>
+
+<div>
+  <WordCloud words={words}/>
+</div>
+
 ```
 
-Your component's source code lives in `src/Component.svelte`.
+## Props
+| Property | Description             | Default Value |
+|----------|-------------------------|---------------|
+| words    | Array of object contains text and count value ``` [{text : "some", count: 10},...] ``` | undefined |
+| width    | Set the word cloud canvas width  | 500           |
+| height   | Set the word cloud canvas height | 500           |
+| font     | Set the word font family | 'Impact'      |
+| padding     | Set the padding of each text | 10     |
+| scheme     | Set the word cloud text color scheme based on d3-scale-chromatic (schemeCategory10 , schemeAccent, schemeDark2, schemePaired, schemePastel1, schemePastel2, schemeSet1, schemeSet2, schemeSet3, schemeTableau10) | 'schemeTableau10'     |
+| minRotate     | Set the minimum rotation of the text | 0     |
+| maxRotate     | Set the maximum rotation of the text | 0     |
+| maxFontSize     | Set the maximum font size of the text | 50     |
+   
+## Events
 
-You can create a package that exports multiple components by adding them to the `src` directory and editing `src/index.js` to reexport them as named exports.
+| Event | Description             |
+|----------|-------------------------|
+| on:click        | Listen to event when word is clicked | 
+| on:mouseover    | Listen to event when word is hovered |
+| on:mouseout     | Listen to event when mouse leave the word|
+| on:mousemove    | Listen to event when mouse move inside the word |
 
-TODO
-
-* [ ] some firm opinions about the best way to test components
-* [ ] update `degit` so that it automates some of the setup work
-
-
-## Setting up
-
-* Run `npm init` (or `yarn init`)
-* Replace this README with your own
-
-
-## Consuming components
-
-Your package.json has a `"svelte"` field pointing to `src/index.js`, which allows Svelte apps to import the source code directly, if they are using a bundler plugin like [rollup-plugin-svelte](https://github.com/sveltejs/rollup-plugin-svelte) or [svelte-loader](https://github.com/sveltejs/svelte-loader) (where [`resolve.mainFields`](https://webpack.js.org/configuration/resolve/#resolve-mainfields) in your webpack config includes `"svelte"`). **This is recommended.**
-
-For everyone else, `npm run build` will bundle your component's source code into a plain JavaScript module (`dist/index.mjs`) and a UMD script (`dist/index.js`). This will happen automatically when you publish your component to npm, courtesy of the `prepublishOnly` hook in package.json.
