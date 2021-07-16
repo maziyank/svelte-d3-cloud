@@ -1,8 +1,9 @@
 {
   "name": "svelte-d3-cloud",
   "description": "svelte wrapper for d3-cloud",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "maziyank",
+  "repository": "https://github.com/maziyank/svelte-d3-cloud",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -20,7 +21,9 @@
   "keywords": [
     "svelte",
     "d3-cloud",
-    "wordcloud"
+    "wordcloud",
+    "word",
+    "visualization"
   ],
   "files": [
     "src",

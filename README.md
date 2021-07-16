@@ -1,6 +1,6 @@
 # svelte-d3-cloud
 
-Svelte wrapper for [d3-cloud](https://github.com/jasondavies/d3-cloud)
+Svelte wrapper for [d3-cloud](https://github.com/jasondavies/d3-cloud). See [Demo](https://codesandbox.io/s/cold-browser-7qkms)
 
 ## Installation
 
@@ -49,4 +49,3 @@ const words = [
 | on:mouseover    | Listen to event when word is hovered |
 | on:mouseout     | Listen to event when mouse leave the word|
 | on:mousemove    | Listen to event when mouse move inside the word |
-
