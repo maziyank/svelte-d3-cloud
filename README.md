@@ -4,7 +4,13 @@ Svelte wrapper for [d3-cloud](https://github.com/jasondavies/d3-cloud)
 
 ## Installation
 
-* Run `npm install svelte-d3-cloud` (or `yarn add svelte-d3-cloud`)
+```js 
+npm install svelte-d3-cloud
+``` 
+or
+```js
+yarn add svelte-d3-cloud
+```
 
 ## Usage
 
