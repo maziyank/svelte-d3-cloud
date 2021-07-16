@@ -2,6 +2,7 @@
   "name": "svelte-d3-cloud",
   "description": "svelte wrapper for d3-cloud",
   "version": "0.0.1",
+  "author": "Bakhtiar Amaludin <maziyank>",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -29,5 +30,6 @@
     "d3-scale": "^4.0.0",
     "d3-scale-chromatic": "^3.0.0",
     "d3-selection": "^3.0.0"
-  }
+  },
+  "license": "MIT"
 }
