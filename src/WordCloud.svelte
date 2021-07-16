@@ -35,6 +35,7 @@
   export let maxRotate = 0;
   export let scheme = "schemeTableau10";
   export let padding = 10;
+  export let backgroundColor = "#fff"
 
   // count max word occurence
   const maxWordCount = words.reduce((prev, cur) =>
@@ -97,4 +98,13 @@
 
 </script>
 
-<div id="wordcloud" />
+<div id="wordcloud" style="background-color: {backgroundColor};"/>
+
+<style>
+    div#wordcloud {        
+        width: fit-content; 
+        height: fit-content;        
+    }
+</style>
+
+
