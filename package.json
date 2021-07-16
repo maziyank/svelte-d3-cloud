@@ -1,5 +1,7 @@
 {
-  "name": "Svelte wrapper for d3-cloud",
+  "name": "svelte-d3-cloud",
+  "description": "svelte wrapper for d3-cloud",
+  "version": "0.0.1",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -21,5 +23,11 @@
   "files": [
     "src",
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "d3-cloud": "^1.2.5",
+    "d3-scale": "^4.0.0",
+    "d3-scale-chromatic": "^3.0.0",
+    "d3-selection": "^3.0.0"
+  }
 }
