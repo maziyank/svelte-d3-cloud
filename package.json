@@ -2,7 +2,7 @@
   "name": "svelte-d3-cloud",
   "description": "svelte wrapper for d3-cloud",
   "version": "0.0.1",
-  "author": "Bakhtiar Amaludin <maziyank>",
+  "author": "maziyank",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -11,6 +11,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.1",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "rollup": "^2.0.0",
     "rollup-plugin-svelte": "^6.0.0",
