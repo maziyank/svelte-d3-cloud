@@ -33,6 +33,7 @@ const words = [
 | words    | Array of object contains text and count value ``` [{text : "some", count: 10},...] ``` | undefined |
 | width    | Set the word cloud canvas width  | 500           |
 | height   | Set the word cloud canvas height | 500           |
+| backgroundColor     | Set the canvas background color | '#fff'      |
 | font     | Set the word font family | 'Impact'      |
 | padding     | Set the padding of each text | 10     |
 | scheme     | Set the word cloud text color scheme based on d3-scale-chromatic (schemeCategory10 , schemeAccent, schemeDark2, schemePaired, schemePastel1, schemePastel2, schemeSet1, schemeSet2, schemeSet3, schemeTableau10) | 'schemeTableau10'     |
